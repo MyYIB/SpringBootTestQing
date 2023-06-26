@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.springboottestqing.mapper.TeacherMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.springboottestqing.entity.Teacher">
+            <id property="teacherId" column="teacher_id" jdbcType="INTEGER"/>
+            <result property="userId" column="user_Id" jdbcType="INTEGER"/>
+            <result property="teacherNo" column="teacher_no" jdbcType="VARCHAR"/>
+            <result property="teacherName" column="teacher_name" jdbcType="VARCHAR"/>
+            <result property="teacherSex" column="teacher_sex" jdbcType="VARCHAR"/>
+            <result property="teacherPhone" column="teacher_phone" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        teacher_id,user_Id,teacher_no,
+        teacher_name,teacher_sex,teacher_phone
+    </sql>
+</mapper>
